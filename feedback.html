@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback</title>
+	<style>
+		body {
+    font-family: Arial, sans-serif;
+    background-color: royalblue;
+    padding: 1.25em;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+form {
+    background-color: white;
+    padding:  1.25em;
+    border-radius: 0.625em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    resize: vertical;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom:  0.625em;
+}
+button[type=submit], button[type=reset] {
+    background-color: #4CAF50;
+    padding: 0.75em  1.25em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    float: right;
+    margin-top:  0.625em;
+    margin-left: 0.625em;
+}
+button[type=submit]:hover, button[type=reset]:hover {
+    background-color: #45a049;
+}
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 12.5em;
+    margin-bottom: 1.25em;
+}  
+
+#divsection{
+	margin-left:auto;
+}
+
+
+	</style>
+</head>
+
+<body>
+    <img src="images/logo.png" alt="images/wg logo.png" class="logo">
+	
+	<h1>Feedback</h1>
+	<form action="submit-feedback.php" method="post">
+		<h2>Please write your feedback below:</h2>
+
+		<label for="rating">How do you rate your overall experience?</label>
+
+		<div section="rating">
+
+			<label>Excellent
+			<input type="radio" id="excellent" name="rating" value="1"/>
+		</label>
+
+        <label>Good
+			<input type="radio" id="good" name="rating" value="2"/>
+		</label>
+
+		<label>Average
+			<input type="radio" id="average" name="rating" value="3"/>
+		</label>
+
+		<label>Bad
+			<input type="radio" id="bad" name="rating" value="4"/>
+		</label>
+
+	</div>
+
+		<label for="name">Full Name</label>
+		<input type="text" id="name" name="name" placeholder="Full name" required/>
+
+		<label for="gender">Gender</label>
+		<select id="gender" name="Gender" required>
+ 
+			   <option value="0">Select...</option>
+			   <option value="F">Female</option>
+			   <option value="M">Male</option>
+		</select></br>
+ 
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" placeholder="Email" required/>
+
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" name="phone" placeholder="Phone" required/>
+
+		<label for="message">Message</label>
+        <textarea>
+            </textarea>
+
+			<button>Submit</button>
+			<button>Reset</button>
+            </form>
+            </body>
+            </html>
+
+        
